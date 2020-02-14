@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+     <script src="https://use.fontawesome.com/e7e7e02c3b.js"></script>th=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<style type="text/css">
+		.map-container-6{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container-6 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+	</style>
+	<style>
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: #6dc3bb;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #6dc3bb;
+}
+</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<style>
+.carousel{
+    margin-top: 20px;
+}
+.carousel-item{
+    text-align: center;
+    min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+.bs-example{
+  margin: 20px;
+}
+.imageP{
+    height: 225px;
+    width: 225px;
+    padding:10px;
+    margin-left: 55px;
+}
+
+.row{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+</style>
+
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" >
+      <a class="navbar-brand" href="#" style="padding-left: 10px"><h3>Sadguru Novelty</h3></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+       <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="padding-left: 0px">
+          <li class="nav-item active">
+            <a class="nav-link" href="HomePage.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Trending.html"  tabindex="-1" aria-disabled="true">Trending</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Developer.html" tabindex="-1" aria-disabled="true">Developer</a> 
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="Contact.html" tabindex="-1" aria-disabled="true">Contact</a> 
+          </li>
+        </ul>  
+               <!--DEOPDOWN-->
+               <div class="dropdown" style="padding-right: 100px">
+                      <button class="dropbtn">Shop by Categories</button>
+                      <div class="dropdown-content">
+                        <a href="#">Makeup</a>
+                        <a href="#">Foundation</a>
+                        <a href="#">Compack</a>
+                        <a href="#">Eyeliner</a>
+                        <a href="#">Eyebrows</a>
+                        <a href="#">Maskara</a>
+                        <a href="#">Broach</a>
+                        <a href="#">Pearl_Set</a>
+                        <a href="#">Earrings</a>
+                </div>
+      </div>
+    </nav> 
+
+<div class="card-deck container-fluid" style="padding-top: 100px">
+  <div class="card">
+    <img class="card-img-top" src="./images/Makeup/Makeup-011.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">NYN Makeup Kit</h5>
+      <sup class="a-price-symbol" style="font-size: 13px ; color: orange ;">₹</sup>
+      <span class="a-price-whole" style="color: orange ; font-size: 20px">399</span>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="./images/Makeup/Makeup-021.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">NYN Makeup Kit</h5>
+      <sup class="a-price-symbol" style="font-size: 13px ; color: orange ;">₹</sup>
+      <span class="a-price-whole" style="color: orange ; font-size: 20px">399</span>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="./images/Makeup/Makeup-031.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">NYN Makeup Kit</h5>
+      <sup class="a-price-symbol" style="font-size: 13px ; color: orange ;">₹</sup>
+     <span class="a-price-whole" style="color: orange ; font-size: 20px">399</span>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
+
+<div class="card-deck container-fluid" style="padding-top: 100px">
+  <div class="card">
+    <img class="card-img-top" src="./images/Makeup/Makeup-041.jpg" alt="Card image cap">
+   <div class="card-body">
+      <h5 class="card-title">NYN Makeup Kit</h5>
+      <sup class="a-price-symbol" style="font-size: 13px ; color: orange ;">₹</sup>
+     <span class="a-price-whole" style="color: orange ; font-size: 20px">399</span>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="./images/Makeup/Makeup-051.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">ADS Makeup Kit</h5>
+      <sup class="a-price-symbol" style="font-size: 13px ; color: orange ;">₹</sup>
+      <span class="a-price-whole" style="color: orange ; font-size: 20px">399</span>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="./images/Makeup/Makeup-061.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">ADS Makeup Kit</h5>
+     <sup class="a-price-symbol" style="font-size: 13px ; color: orange ;">₹</sup>
+       <span class="a-price-whole" style="color: orange ; font-size: 20px">399</span>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
+
+<div class="card-deck container-fluid" style="padding-top: 100px">
+  <div class="card">
+    <img class="card-img-top" src="./images/Makeup/Makeup-071.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">NYN Makeup Kit</h5>
+     <sup class="a-price-symbol" style="font-size: 13px ; color: orange ;">₹</sup>
+      <span class="a-price-whole" style="color: orange ; font-size: 20px">399</span>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="./images/Makeup/Makeup-081.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">NYN Makeup Kit</h5>
+     <sup class="a-price-symbol" style="font-size: 13px ; color: orange ;">₹</sup>
+      <span class="a-price-whole" style="color: orange ; font-size: 20px">399</span>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="./images/Makeup/Makeup-091.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">NYN Makeup Kit</h5>
+     <sup class="a-price-symbol" style="font-size: 13px ; color: orange ;">₹</sup>
+      <span class="a-price-whole" style="color: orange ; font-size: 20px">399</span>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
+
+<div class="card-deck container-fluid" style="padding-top: 100px">
+  <div class="card">
+    <img class="card-img-top" src="./images/Makeup/Makeup-101.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">NYN Makeup Kit</h5>
+     <sup class="a-price-symbol" style="font-size: 13px ; color: orange ;">₹</sup>
+       <span class="a-price-whole" style="color: orange ; font-size: 20px">399</span>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="./images/Makeup/Makeup-111.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">ADS Makeup Kit</h5>
+     <sup class="a-price-symbol" style="font-size: 13px ; color: orange ;">₹</sup>
+      <span class="a-price-whole" style="color: orange ; font-size: 20px">399</span>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="./images/Makeup/Makeup-121.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">ADS Makeup Kit</h5>
+     <sup class="a-price-symbol" style="font-size: 13px ; color: orange ;">₹</sup>
+      <span class="a-price-whole" style="color: orange ; font-size: 20px">399</span>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
+
+<div class="card-deck container-fluid" style="padding-top: 100px">
+  <div class="card">
+    <img class="card-img-top" src="./images/Makeup/Makeup-131.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">ADS Makeup Kit</h5>
+     <sup class="a-price-symbol" style="font-size: 13px ; color: orange ;">₹</sup>
+       <span class="a-price-whole" style="color: orange ; font-size: 20px">399</span>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="./images/Makeup/Makeup-141.jpg" alt="Card image cap">
+   <div class="card-body">
+      <h5 class="card-title">ADS Makeup Kit</h5>
+     <sup class="a-price-symbol" style="font-size: 13px ; color: orange ;">₹</sup>
+     <span class="a-price-whole" style="color: orange ; font-size: 20px">399</span>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="./images/Makeup/Makeup-151.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">ADS Makeup Kit</h5>
+     <sup class="a-price-symbol" style="font-size: 13px ; color: orange ;">₹</sup>
+       <span class="a-price-whole" style="color: orange ; font-size: 20px">399</span>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
+
+<div class="card-deck container-fluid" style="padding-top: 100px">
+  <div class="card">
+    <img class="card-img-top" src="./images/Makeup/Makeup-161.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">ADS Makeup Kit</h5>
+     <sup class="a-price-symbol" style="font-size: 13px ; color: orange ;">₹</sup>
+       <span class="a-price-whole" style="color: orange ; font-size: 20px">399</span>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="./images/Makeup/Makeup-171.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">NYN Makeup Kit</h5>
+     <sup class="a-price-symbol" style="font-size: 13px ; color: orange ;">₹</sup>
+       <span class="a-price-whole" style="color: orange ; font-size: 20px">399</span>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="./images/Makeup/Makeup-181.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">NYN Makeup Kit</h5>
+     <sup class="a-price-symbol" style="font-size: 13px ; color: orange ;">₹</sup>
+       <span class="a-price-whole" style="color: orange ; font-size: 20px">399</span>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
+
+<div class="card-deck container-fluid" style="padding-top: 100px">
+  <div class="card">
+    <img class="card-img-top" src="./images/Makeup/Makeup-191.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">CYN Makeup Kit</h5>
+     <sup class="a-price-symbol" style="font-size: 13px ; color: orange ;">₹</sup>
+       <span class="a-price-whole" style="color: orange ; font-size: 20px">399</span>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="./images/Makeup/Makeup-201.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">NYN Makeup Kit</h5>
+     <sup class="a-price-symbol" style="font-size: 13px ; color: orange ;">₹</sup>
+       <span class="a-price-whole" style="color: orange ; font-size: 20px">399</span>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="./images/Makeup/Makeup-211.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">NYN Makeup Kit</h5>
+     <sup class="a-price-symbol" style="font-size: 13px ; color: orange ;">₹</sup>
+       <span class="a-price-whole" style="color: orange ; font-size: 20px">399</span>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
+
+<div class="card-deck container-fluid" style="padding-top: 100px">
+  <div class="card">
+    <img class="card-img-top" src="./images/Makeup/Makeup-221.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">HALF 'N HALF Makeup Kit</h5>
+     <sup class="a-price-symbol" style="font-size: 10px ; color: orange ;">₹</sup>
+       <span class="a-price-whole" style="color: orange ; font-size: 20px">399</span>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="./images/Makeup/Makeup-231.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">BB Makeup Kit</h5>
+     <sup class="a-price-symbol" style="font-size: 13px ; color: orange ;">₹</sup>
+       <span class="a-price-whole" style="color: orange ; font-size: 20px">399</span>
+    </div>    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+  </div>
+  </div>
+</div>
+
+<br>
+<hr class="style1">
+<br>
+
+<div class="row text-center">
+        <div class="col-md-4">
+          <a class="btn-floating blue accent-1"><i class="fas fa-map-marker-alt"></i></a>
+          <p>San Francisco, CA 94126</p>
+          <p>United States</p>
+        </div>
+
+        <div class="col-md-4">
+          <a class="btn-floating blue accent-1"><i class="fas fa-phone"></i></a>
+          <p>+91 909 990 5080</p>
+          <p>Mon - Fri, 8:00-22:00</p>
+        </div>
+
+        <div class="col-md-4">
+          <a class="btn-floating blue accent-1"><i class="fas fa-envelope"></i></a>
+          <p>n.sanjaykumar71@gmail.com</p>
+        </div>
+      </div>
+
+    </div>
+    <!--Grid column-->
+
+  </div>
+
+</section>
+<!--Section: Contact v.1-->
+</div>
+<!--FOOTER-->
+<div class="container-fluid">
+    <div class="row text-center">
+        <div class="col" style="padding: 20px; background : #cfcbc2">
+            Copyright © 2020 Sadguru Novelty. All rights reserved | Kashyap Sayani
+        </div>
+    </div>    
+</div>
+
+</body>
+</html>
