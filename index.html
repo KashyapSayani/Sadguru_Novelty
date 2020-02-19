@@ -7,16 +7,54 @@
 
     <title>Sadguru Novelty Welcome To You ...</title>
 
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-     <script src="https://use.fontawesome.com/e7e7e02c3b.js"></script>
-    <style>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab|Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+
+
+  <style type="text/css">
+    .map-container-6{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container-6 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+  </style>
+  <style>
 /* Style The Dropdown Button */
 .dropbtn {
   background-color: #6dc3bb;
@@ -83,10 +121,15 @@
     padding:10px;
     margin-left: 55px;
 }
+
 .row{
   margin-left: 0px;
   margin-right: 0px;
 }
+
+li.nav-item.active a {
+  color: orange;
+} 
 </style>
 
 </head>
@@ -102,7 +145,7 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="padding-left: 0px">
           <li class="nav-item active">
-            <a class="nav-link" href="HomePage.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="  Trending.html"  tabindex="-1" aria-disabled="true">Trending</a>
@@ -122,14 +165,11 @@
                       <button class="dropbtn">Shop by Categories</button>
                       <div class="dropdown-content">
                         <a href="Makeup.html">Makeup</a>
-                        <a href="#">Foundation</a>
-                        <a href="#">Compack</a>
-                        <a href="#">Eyeliner</a>
-                        <a href="#">Eyebrows</a>
-                        <a href="#">Maskara</a>
-                        <a href="#">Broach</a>
-                        <a href="#">Pearl_Set</a>
-                        <a href="#">Earrings</a>
+                        <a href="Foundation.html">Foundation</a>
+                        <a href="Eyeliner.html">Eyeliner</a>
+                        <a href="EyeShadow.html">EyeShadow</a>
+                        <a href="Kajal.html">Kajal</a>
+                        <a href="Sindoor.html">Sindoor</a>
                 </div>
       </div>
     </nav> 
@@ -168,7 +208,7 @@
 </div>
 
 <!--OUR PRODUCTS-->
-<div class="card-deck container-fluid" style="padding-top: 100px">
+<div class="card-deck container-fluid" style="padding-top: 800px">
   <div class="card">
     <img class="card-img-top" src="./images/Makeup/Makeup-071.jpg" alt="Card image cap">
     <div class="card-body">
@@ -248,8 +288,8 @@
   <div class="row text-center">
         <div class="col-md-4">
           <a class="btn-floating blue accent-1"><i class="fas fa-map-marker-alt"></i></a>
-          <p>San Francisco, CA 94126</p>
-          <p>United States</p>
+               <p>Shri Sadguru Novelty</p>
+      <p>3/21 Corner, Gundavadi, Rajkot, Gujarat 360002</p>
         </div>
 
         <div class="col-md-4">
